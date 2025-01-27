@@ -1,15 +1,11 @@
 #include <stdio.h>
-
 int main() {
-    int a,b;
-    scanf("%d %d",&a,&b);
-    if(a>b)
-    {
-        printf("True");
-    }
-    else
-    {
-        printf("False")
+    int num1, num2;
+    scanf("%d %d", &num1, &num2);
+    if (num1 > num2) {
+        printf("True\n"); // Output 'True' if the condition is met
+    } else {
+        printf("False\n"); // Output 'False' otherwise
     }
     return 0;
 }
