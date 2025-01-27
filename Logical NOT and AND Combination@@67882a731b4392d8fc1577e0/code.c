@@ -1,6 +1,14 @@
 #include <stdio.h>
 int main() {
-    $ gcc your_program.c -o your_program
-    $ ./your_program < input.txt
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if((a!>0 && b!>0))
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
     return 0;
 }
