@@ -4,11 +4,11 @@ int main() {
     scanf("%d",&n);
     if (n%5==0 and n%11==0)
     {
-        printf("Divisible")
+        printf("Divisible");
     }
     else
     {
-        printf("Not Divisible")
+        printf("Not Divisible");
     }
     return 0;
 }
