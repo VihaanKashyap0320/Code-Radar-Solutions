@@ -4,7 +4,7 @@ int main() {
     scanf("%d %d",&cp,&sp);
     if (cp>sp)
     {
-        printf("Loss")
+        printf("Loss");
     }
     else if (cp=sp)
     {
