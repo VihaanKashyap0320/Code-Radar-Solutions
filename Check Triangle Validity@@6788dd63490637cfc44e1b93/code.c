@@ -1,15 +1,11 @@
 #include <stdio.h>
+
 int main() {
-    int a,b,c;
-    int x=a+b;
-    int y=b+c;
-    int z= a+c;
-    scanf("%d %d %d",&a,&b,&c);
-    if (x>c || y>a || z>b)
-    {
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    if (a + b > c && b + c > a && a + c > b) {
         printf("Valid");
-    }
-    else {
+    } else {
         printf("Invalid");
     }
     return 0;
