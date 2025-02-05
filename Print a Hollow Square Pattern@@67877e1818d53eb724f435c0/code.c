@@ -7,9 +7,9 @@ int main() {
             if(i==1 || i==m || j==n || j==1 ){
                 printf("* ");
             }
-            // else{
-            //     printf("  ");
-            // }
+            else{
+                printf("  ");
+            }
         }
         printf("\n");
     }
