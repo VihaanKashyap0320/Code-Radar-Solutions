@@ -1,27 +1,36 @@
-#include<stdio.h>
-int main() {   
+#include <stdio.h>
+
+int main() {
     int n;
-    scanf("%d", &n);
-    int nsp = n / 2;  // Number of spaces
-    int nst = 1;      // Number of stars
+    scanf("%d", &n);  // Read input
+    int spaces = n - 1;  // Spaces before first '*'
+    int stars = 1;       // Number of stars in the first row
+    // Upper half including the middle row
     for (int i = 1; i <= n; i++) {
-        // Print spaces
-        for (int j = 1; j <= nsp; j++) {   
+        for (int j = 1; j <= spaces; j++) {
             printf(" ");
         }
-        // Print stars
-        for (int k = 1; k <= nst; k++) {
+        for (int j = 1; j <= stars; j++) {
             printf("*");
         }
         printf("\n");
-        // Update `nsp` and `nst` after each row
-        if (i < n / 2 + 1) {  // Upper half (including middle row)
-            nsp--;
-            nst += 2;
-        } else {  // Lower half
-            nsp++;
-            nst -= 2;
+        spaces--;  // Decrease spaces for next row
+        stars += 2; // Increase stars for next row
+    }
+    // Lower half (N-1 rows)
+    spaces = 1;
+    stars = 2 * (n - 1) - 1;
+
+    for (int i = 1; i < n; i++) {
+        for (int j = 1; j <= spaces; j++) {
+            printf(" ");
         }
+        for (int j = 1; j <= stars; j++) {
+            printf("*");
+        }
+        printf("\n");
+        spaces++;   // Increase spaces for next row
+        stars -= 2; // Decrease stars for next row
     }
     return 0;
 }
