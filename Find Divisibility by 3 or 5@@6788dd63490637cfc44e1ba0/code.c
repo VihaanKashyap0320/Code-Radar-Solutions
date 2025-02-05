@@ -4,7 +4,7 @@ int main() {
     scanf("%d",&n);
     if (n%3==0 && n%5==0)
     {
-        printf("Divisible by both");
+        printf("Divisible by Both");
     }
     else if (n%3==0)
     {
