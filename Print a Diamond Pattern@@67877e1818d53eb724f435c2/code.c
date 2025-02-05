@@ -14,7 +14,6 @@ int main() {
             printf("*");
         }
         printf("\n");
-        printf("\n");
         // Update `nsp` and `nst` after each row
         if (i < n / 2 + 1) {  // Upper half (including middle row)
             nsp--;
