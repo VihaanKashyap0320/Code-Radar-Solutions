@@ -8,7 +8,7 @@ int main() {
     }
     else if (n==0)
     {
-        printf("Zero")
+        printf("Zero");
     }
     else
     {
