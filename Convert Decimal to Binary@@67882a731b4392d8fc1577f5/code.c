@@ -9,17 +9,22 @@ int main() {
         return 0;
     }
 
-    // Loop to extract and print bits
-    for (int i = 31; i >= 0; i--) {
-        // Extract the bit at position i
-        int bit = (num >> i) & 1;
+    // Array to store binary digits
+    int binary[32];
+    int i = 0;
 
-        // Print the bit only if it is 1 or if we've already printed a 1
-        if (bit == 1 || i < 31) {
-            printf("%d", bit);
-        }
+    // Convert decimal to binary
+    while (num > 0) {
+        binary[i] = num % 2;  // Store remainder (0 or 1)
+        num = num / 2;        // Divide the number by 2
+        i++;
     }
 
-    printf("\n");  // Print a newline after binary number
+    // Print the binary digits in reverse order
+    for (int j = i - 1; j >= 0; j--) {
+        printf("%d", binary[j]);
+    }
+
+    printf("\n");  // Print newline after the binary number
     return 0;
 }
