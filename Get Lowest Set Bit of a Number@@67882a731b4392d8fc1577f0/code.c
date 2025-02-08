@@ -7,6 +7,5 @@ int main() {
         pos++;           
     }
     printf("%d\n", pos);
-    
     return 0;
 }
