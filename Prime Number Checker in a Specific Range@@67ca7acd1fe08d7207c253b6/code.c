@@ -17,7 +17,7 @@ void printPrimesInRange(int a, int b) {
     for (int i = a; i <= b; i++) {  // Loop correctly from 'a' to 'b'
         if (isPrime(i)) {
             if (found) printf(" ");  // Print space before the next number
-            printf("%d ",i);
+            printf("%d",i);
             found = 1;
         }
     }
