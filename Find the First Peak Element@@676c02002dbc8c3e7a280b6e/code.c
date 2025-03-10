@@ -14,7 +14,7 @@ int main(){
             num=arr[i+1];
             con=1;
         }
-        else if ( num>arr[i] && arr[i]>arr[i+1] ){
+        else if ( num==arr[i] && arr[i]>arr[i+1] ){
             num=arr[i];
             con=1;
         }
