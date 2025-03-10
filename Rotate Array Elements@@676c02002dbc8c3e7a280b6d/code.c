@@ -20,7 +20,7 @@ int main(){
     newreverse(arr,0,k-1);
     newreverse(arr,k,n-1);
     for (int i=0;i<n;i++){
-        printf("%d",arr[i]);
+        printf("%d\n",arr[i]);
     }
     return 0;
 }
