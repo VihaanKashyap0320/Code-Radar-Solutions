@@ -13,10 +13,6 @@ int main(){
             num=arr[i+1];
         }
 
-        else{
-            printf("%d"-1);
-            return 0;
-        }
     }
     printf("%d",num);
 
