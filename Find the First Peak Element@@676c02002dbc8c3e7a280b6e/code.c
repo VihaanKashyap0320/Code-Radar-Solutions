@@ -18,6 +18,9 @@ int main(){
             num=arr[i];
             con=1;
         }
+        else{
+            con=0;
+        }
 
     }
     if (con==1){
