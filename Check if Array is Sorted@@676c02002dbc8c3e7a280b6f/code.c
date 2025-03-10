@@ -19,5 +19,5 @@ int main(){
             }
         }
     }
-    rteurn 0;
+    return 0;
 }
