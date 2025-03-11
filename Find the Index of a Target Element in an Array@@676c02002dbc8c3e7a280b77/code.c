@@ -7,6 +7,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);  // Read the array elements
     }
+    scanf("%d",&target);
     for (int i=0;i<n;i++){
         if (target == arr[i]){
             printf("%d",i);
