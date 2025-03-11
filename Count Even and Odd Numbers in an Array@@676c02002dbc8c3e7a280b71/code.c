@@ -15,7 +15,7 @@ int main() {
                 codd++;
             }
         }
-    printf("%d ",cee);
     printf("%d ",codd);
+    printf("%d ",cee);
     return 0;
 }
