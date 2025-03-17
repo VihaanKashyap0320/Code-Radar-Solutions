@@ -13,7 +13,7 @@ int main(){
         var=(arr[(n/2)-1] + arr[(n/2)+1]) /2;
     }
     else{
-        var=arr[(n/2)+1];
+        var=arr[(n/2)];
     }
     printf("%d",var);
     return 0;
