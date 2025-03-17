@@ -8,7 +8,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for (int i=0,j=n;i<j;i++,j--){
-        if (arr[i]!=arrj){
+        if (arr[i]!=arr[j]){
             ispalin=0;
             break;
         }
