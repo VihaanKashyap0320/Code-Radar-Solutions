@@ -15,6 +15,6 @@ int main(){
     else{
         var=arr[(n/2)+1];
     }
-    printf("%d"var);
+    printf("%d",var);
     return 0;
 }
