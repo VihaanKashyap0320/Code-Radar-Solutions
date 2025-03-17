@@ -13,7 +13,7 @@ int main(){
             break;
         }
     }
-    if (ispalin==1){
+    if (ispalin){
         printf("YES");
     }
     else {
