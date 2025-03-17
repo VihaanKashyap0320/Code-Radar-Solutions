@@ -1,5 +1,5 @@
 // Your code here...
-#include<tsdio.h>
+#include<stdio.h>
 int main(){
     int n;
     int count=0;
