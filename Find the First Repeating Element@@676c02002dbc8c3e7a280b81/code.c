@@ -14,6 +14,6 @@ int main() {
             }
         }
     }
-    printf("-1"); // No repeating element
+    printf("-1"); 
     return 0;
 }
