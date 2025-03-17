@@ -7,7 +7,7 @@ int main(){
     for (int i=0;i<=n;i++){
         scanf("%d",&arr[i]);
     }
-    for (int i=0,j=n;i<j;i++,j--){
+    for (int i=0,j=n-1;i<j;i++,j--){
         if (arr[i]!=arr[j]){
             ispalin=0;
             break;
