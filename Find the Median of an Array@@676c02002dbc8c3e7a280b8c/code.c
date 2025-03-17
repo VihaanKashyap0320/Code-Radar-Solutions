@@ -10,7 +10,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     if (n%2==0){
-        var=(arr[(n/2)-1] + arr[(n/2)+1]) /2;
+        var=(arr[(n/2)-1] + arr[(n/2)]) /2;
     }
     else{
         var=arr[(n/2)];
