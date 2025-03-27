@@ -1,5 +1,5 @@
 
-int finalEnergy(int clouds,int n,int k) {
+int finalEnergy(int clouds[],int n,int k) {
     char c;
     printf("Captured Input:\n");
     while ((c = getchar()) != EOF) {  // Read character by character
