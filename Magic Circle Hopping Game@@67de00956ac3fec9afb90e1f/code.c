@@ -1,7 +1,5 @@
-// Your code here...
-#include <stdio.h>
 
-int main() {
+int finalEnergy(int clouds,int n,int k) {
     char c;
     printf("Captured Input:\n");
     while ((c = getchar()) != EOF) {  // Read character by character
