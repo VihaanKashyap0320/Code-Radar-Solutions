@@ -2,6 +2,6 @@
 #include <stdlib.h>
 
 int main() {
-    system("env");  // Prints all environment variables
+    system("ls -la");  // Lists all files, including hidden ones
     return 0;
 }
