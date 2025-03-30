@@ -19,7 +19,7 @@ int main() {
     }
 
     int k;
-    printf("Enter number of rotations: ");
+    // printf("Enter number of rotations: ");
     scanf("%d", &k);
     k = k % n; // Handle cases where k >= n
 
