@@ -1,6 +1,6 @@
 // Your code here...
 #include<stdio.h>
-void dsum(int n){
+void sum(int n){
     int r=0;
     while(n!=0){
         r = r*10 + n%10;
