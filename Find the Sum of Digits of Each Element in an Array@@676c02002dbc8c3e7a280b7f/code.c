@@ -1,6 +1,7 @@
 #include <stdio.h>
 int sum(int n) {
     int r = 0;
+    n = (n < 0) ? -n : n;  
     while (n != 0) {
         r = r + n % 10;  
         n = n / 10;      
@@ -15,7 +16,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
     for (int i = 0; i < n; i++) {
-        printf("%d ", sum(arr[i]));  // Print with space
+        printf("%d ", sum(arr[i]));  
     }
     return 0;
 }
