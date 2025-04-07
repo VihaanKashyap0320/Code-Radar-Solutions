@@ -6,18 +6,21 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    for (int i = 0; i < n-1; i++) {
+    if (n==1) printf("YES");
+    else {
+        for (int i = 0; i < n-1; i++) {
         if (arr[i+1]>=arr[i]){
             inc++;
         }
     }
-    for (int i = 0; i < n-1; i++) {
+        for (int i = 0; i < n-1; i++) {
         if (arr[i+1]<=arr[i]){
             dec++;
         }
     }
-    if (inc) printf("YES");
-    else if (dec) printf("YES");
-    else printf("NO");
+        if (inc) printf("YES");
+        else if (dec) printf("YES");
+        else printf("NO");
+    }
     return 0;
 }
