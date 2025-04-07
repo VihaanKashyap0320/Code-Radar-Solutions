@@ -18,7 +18,6 @@ int main(){
     for (int i=0;i<n;i++){
         isprime(arr[i]);
         if (isprime) count++;
-        else count=0;
     }
     if (count>=1) printf("%d",count);
     else printf("0");
