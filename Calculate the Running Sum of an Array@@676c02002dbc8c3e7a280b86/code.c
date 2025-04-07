@@ -8,9 +8,8 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for (int i=0;i<n;i++){
-        sum=arr[i];
-        printf("%d",sum);
         sum+=arr[i];
+        printf("%d ",sum);
     }
     return 0;
 }
