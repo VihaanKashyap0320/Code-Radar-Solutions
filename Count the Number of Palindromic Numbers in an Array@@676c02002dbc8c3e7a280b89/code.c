@@ -1,11 +1,11 @@
 #include <stdio.h>
 int isPalindrome(int x) {
-    int original = x, reversed = 0;
+    int original = x, r = 0;
     while (x > 0) {
-        reversed = reversed * 10 + x % 10;
+        r = r * 10 + x % 10;
         x = x / 10;
     }
-    return original == reversed;
+    return original == r;
 }
 int main() {
     int n;
