@@ -16,7 +16,7 @@ int main() {
             dec++;
         }
     }
-    if (inc) printf("%d",YES);
-    else printf("%d",NO);
+    if (inc) printf("YES");
+    else printf("NO");
     return 0;
 }
