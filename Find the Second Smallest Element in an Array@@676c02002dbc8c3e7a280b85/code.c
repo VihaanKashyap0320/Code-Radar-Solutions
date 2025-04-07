@@ -19,6 +19,11 @@ int main(){
             smin=arr[i];
         }
     }
-    printf("%d",smin);
+        if (smin == INT_MAX) {
+        printf("-1\n"); // No second largest found
+    } else {
+        printf("%d\n", smin);
+    }
+
     return 0;
 }
