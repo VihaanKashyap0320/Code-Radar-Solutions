@@ -1,25 +1,25 @@
-#include<stdio.h>
-int isprime(int x){
-    int r=0;
-    while (x!=0){
-        r=r*10 + x%10;
-        x=x/10;
+#include <stdio.h>
+int isPaindrome(int x) {
+    int original = x, reversed = 0;
+    while (x > 0) {
+        reversed = reversed * 10 + x % 10;
+        x = x / 10;
     }
-    if (x==r) return 1;
-    else return 0;
+    return original == reversed;
 }
-int main(){
-    int n,k,count=0;
-    scanf("%d %d",&n,&k);
+int main() {
+    int n;
+    scanf("%d", &n);
     int arr[n];
-    for (int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    for (int i=0;i<n;i++){
-        isprime(arr[i]);
-        if (isprime) count++;
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        if (isPalindrome(arr[i])) {
+            count++;
+        }
     }
-    if (count>=1) printf("%d",count);
-    else printf("0");
+    printf("%d", count);
     return 0;
 }
