@@ -19,6 +19,8 @@ int main(){
             smin=arr[i];
         }
     }
-    printf("%d",smin);
+    if (smin=min) printf("%d",min);
+    else printf("%d",smin);
+
     return 0;
 }
