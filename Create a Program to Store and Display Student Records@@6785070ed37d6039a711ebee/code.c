@@ -5,6 +5,8 @@ int main(){
         char name[25];
         float marks;
     } student ;
+    int n;
+    scanf("%d",&n);
     student srr[n];
     for (int i=0;i<n;i++){
         scanf("%d",&srr[i].rollnumber);
