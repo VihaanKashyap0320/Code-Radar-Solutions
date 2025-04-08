@@ -4,7 +4,7 @@ int main(){
         int rollnumber;
         char name[25];
         float marks;
-    } student ;
+    } student;
     int n;
     scanf("%d",&n);
     student srr[n];
