@@ -12,6 +12,6 @@ int main(){
         sum+=arr[i].temp;
     }
     avg=sum/7;
-    printf("%.2f",avg);
+    printf("Average Temperature: %.2f",avg);
     return 0;
 }
