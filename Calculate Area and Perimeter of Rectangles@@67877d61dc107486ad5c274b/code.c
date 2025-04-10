@@ -4,11 +4,12 @@ int main(){
     int length;
     int breadth;
     } Rectangle ;
-    int n,area,perimeter;
+    int n;
+    float area, perimeter;
     scanf("%d",&n);
     Rectangle arr[n];
     for (int i=0;i<n;i++){
-        scanf("%d %d",&length,&breadth);
+        scanf("%d %d",&arr[i].length,&arr[i].breadth);
     }
     for (int i=1;i<n+1;i++){
         area=arr[i].length * arr[i].breadth;
