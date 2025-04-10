@@ -18,7 +18,7 @@ int main() {
             topIndex = i;
         }
     }
-    printf("Top Scorer:\n");
+    printf("Top Scorer: ");
     printf("Roll Number: %d, Name: %s, Marks: %.2f\n", arr[topIndex].rnum, arr[topIndex].name, arr[topIndex].marks);
     return 0;
 }
