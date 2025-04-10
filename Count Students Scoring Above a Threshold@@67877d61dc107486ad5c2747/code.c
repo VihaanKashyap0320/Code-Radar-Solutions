@@ -7,6 +7,7 @@ typedef struct Student{
 int main() {
     int n,count=0;
     float find;
+    scanf("%f",find);
     scanf("%d", &n); 
     Student arr[n]; 
     for (int i = 0; i < n; i++) {
