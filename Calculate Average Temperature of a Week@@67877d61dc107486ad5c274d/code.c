@@ -7,8 +7,8 @@ int main(){
     int sum;
     float avg;
     char Day[7];
-    for (int i=0;i<n;i++){
-        scanf("%s &d",Day[i].day,&temp);
+    for (int i=0;i<7;i++){
+        scanf("%s &d",Day[i].day,&Day[i].temp);
         sum+=arr[i].temp;
     }
     avg=sum/7;
