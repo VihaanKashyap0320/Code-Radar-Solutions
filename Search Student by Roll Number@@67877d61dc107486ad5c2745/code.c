@@ -1,24 +1,31 @@
 #include <stdio.h>
+#include <string.h>
 typedef struct {
     int rnum;
     char name[25];
     float marks;
 } Student;
 int main() {
-    int n,rfind,roll=0;;
+    int n;
     scanf("%d", &n); 
-    Student arr[n]; 
+    Student arr[n];
     for (int i = 0; i < n; i++) {
         scanf("%d %s %f", &arr[i].rnum, arr[i].name, &arr[i].marks);
     }
-    scanf("%d",&rfind);
+    int rfind;
+    scanf("%d", &rfind);
+    int found = 0;
     for (int i = 0; i < n; i++) {
-        if (arr[i].rnum==rfind){
-            roll=1;
-            printf("Roll Number: %d, Name: %s, Marks: %.2f\n",arr[i].rnum,arr[i].name,arr[i].marks);
+        if (arr[i].rnum == rfind) {
+            printf("Roll Number: %d, Name: %s, Marks: %.2f\n", arr[i].rnum, arr[i].name, arr[i].marks);
+            found = 1;
             break;
         }
     }
-    printf("Student not found");
+
+    if (!found) {
+        printf("Student not found\n");
+    }
+
     return 0;
 }
