@@ -19,6 +19,6 @@ int main() {
             break;
         }
     }
-    printf("Student Not Found");
+    printf("Student Not found");
     return 0;
 }
