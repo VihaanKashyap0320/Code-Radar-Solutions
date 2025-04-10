@@ -11,7 +11,7 @@ int main(){
         scanf("%s &d",arr[i].day,&arr[i].temp);
         sum+=arr[i].temp;
     }
-    avg=sum/7;
+    avg=(float)sum/7;
     printf("Average Temperature: %.2f",avg);
     return 0;
 }
