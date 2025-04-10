@@ -4,7 +4,7 @@ typedef struct student {
     int rnum;
     char name[100];
     float marks;
-} Student;
+} student;
 int main() {
     int n;
     scanf("%d", &n);
