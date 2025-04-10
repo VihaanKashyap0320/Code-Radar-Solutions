@@ -19,6 +19,6 @@ int main() {
         }
     }
     printf("Top Scorer: ");
-    printf("Roll Number: %d, Name: %s, Marks: %.2f\n", arr[topIndex].rnum, arr[topIndex].name, arr[topIndex].marks);
+    printf("Student with Minimum Marks: Roll Number: %d, Name: %s, Marks: %.2f\n", arr[topIndex].rnum, arr[topIndex].name, arr[topIndex].marks);
     return 0;
 }
