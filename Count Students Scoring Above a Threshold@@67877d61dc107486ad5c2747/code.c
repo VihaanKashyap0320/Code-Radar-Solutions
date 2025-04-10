@@ -1,5 +1,5 @@
 #include <stdio.h>
-typedef struct {
+typedef struct Student{
     int rnum;
     char name[25];
     float marks;
