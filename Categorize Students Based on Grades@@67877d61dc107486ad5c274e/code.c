@@ -14,10 +14,10 @@ int main() {
         scanf("%f", &srr[i].marks);
     }
     for (int i = 0; i < n; i++) {
-        if (arr[i].marks>=85){
+        if (srr[i].marks>=85){
         printf("Roll Number: %d, Name: %s, Grade: %c\n", arr[i].rnum, arr[i].name,'A');
         }
-        else if (arr[i].marks>84 && arr[i].marks<=70){
+        else if (srr[i].marks>84 && srr[i].marks<=70){
         printf("Roll Number: %d, Name: %s, Grade: %c\n", arr[i].rnum, arr[i].name,'B');
         }
         else{
