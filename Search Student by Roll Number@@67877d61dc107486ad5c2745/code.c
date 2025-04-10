@@ -15,7 +15,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         if (arr[i].rnum==rfind){
             roll=1;
-            printf("Roll Number: %d, Name: %s, Marks: %.2f",arr[i].rnum,arr[i].name,arr[i].marks);
+            printf("Roll Number: %d, Name: %s, Marks: %.2f\n",arr[i].rnum,arr[i].name,arr[i].marks);
             break;
         }
     }
