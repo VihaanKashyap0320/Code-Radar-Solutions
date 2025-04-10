@@ -4,7 +4,7 @@ int main(){
         char day[15];
         int temp;
     } Day;
-    int sum;
+    int sum=0;
     float avg=0;
     Day arr[7];
     for (int i=0;i<7;i++){
