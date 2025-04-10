@@ -1,9 +1,9 @@
 #include<stdio.h>
-typedef struct {
+int main(){
+    typedef struct {
     int length;
     int breadth;
-} Rectangle ;
-int main(){
+    } Rectangle ;
     int n,area,perimeter;
     scanf("%d",&n);
     Rectangle arr[n];
