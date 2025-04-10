@@ -5,7 +5,7 @@ int main(){
         int temp;
     } Day;
     int sum;
-    float avg;
+    float avg=0;
     Day arr[7];
     for (int i=0;i<7;i++){
         scanf("%s &d",arr[i].day,&arr[i].temp);
