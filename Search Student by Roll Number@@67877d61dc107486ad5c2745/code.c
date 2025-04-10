@@ -18,9 +18,7 @@ int main() {
             printf("Roll Number: %d, Name: %s, Marks: %.2f",arr[i].rnum,arr[i].name,arr[i].marks);
             break;
         }
-        else{
-            printf("Student Not found");
-        }
     }
+    printf("Student Not Found");
     return 0;
 }
