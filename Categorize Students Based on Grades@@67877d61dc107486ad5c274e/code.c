@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
     typedef struct student {
-        int rollnumber;
+        int rnum;
         char name[25];
         float marks;
     } student;
@@ -9,7 +9,7 @@ int main() {
     scanf("%d", &n);
     student srr[n]; 
     for (int i = 0; i < n; i++) {
-        scanf("%d", &srr[i].rollnumber);
+        scanf("%d", &srr[i].rnum);
         scanf("%s", srr[i].name);
         scanf("%f", &srr[i].marks);
     }
