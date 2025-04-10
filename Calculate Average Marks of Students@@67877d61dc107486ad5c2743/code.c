@@ -1,21 +1,20 @@
 #include <stdio.h>
-#include <string.h>
-typedef struct student {
+typedef struct {
     int rnum;
-    char name[100];
+    char name[25];
     float marks;
-} student;
+} Student;
 int main() {
-    int n,sum=0,avg=0;
-    scanf("%d", &n);
-    student arr[n];
+    int n;
+    scanf("%d", &n); // Input number of students
+    Student arr[n]; // Declare array of students
+    float sum = 0.0;
+    // Input student details
     for (int i = 0; i < n; i++) {
         scanf("%d %s %f", &arr[i].rnum, arr[i].name, &arr[i].marks);
+        sum += arr[i].marks; // Add marks to sum
     }
-    for (int i = 0; i < n; i++) {
-        sum+=arr[i].marks;
-    }
-    avg=sum/n;
-    printf("%.2f",avg);
-    return 0;
+    float avg = sum / n;
+    printf("Average Marks: %.2f\n", avg);
+ return 0;
 }
