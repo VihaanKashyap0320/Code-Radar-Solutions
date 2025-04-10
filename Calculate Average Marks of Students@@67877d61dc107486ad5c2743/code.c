@@ -13,7 +13,8 @@ int main() {
         scanf("%d %s %f", &arr[i].rnum, arr[i].name, &arr[i].marks);
     }
     for (int i = 0; i < n; i++) {
-        sum+=arr[i].marks
+        sum+=arr[i].marks;
+    }
     avg=sum/n;
     printf("%.2f",avg);
     return 0;
